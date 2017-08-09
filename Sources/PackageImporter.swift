@@ -27,9 +27,9 @@ class PackageImporter: ShellRunnable {
         let baseArgs = args.joined(separator: " ")
         
         for standardAsset in self.settings.standardPackages ?? [] {
-            let assetPath = PackageImporter.standardAssetDir + "/" + standardAsset.replacingOccurrences(of: " ", with: "\\ ") + ".unitypackage"
+            let assetPath = PackageImporter.standardAssetDir + "/" + standardAsset + ".unitypackage"
             print("import: " + assetPath)
-            let _ = shell(path: "/bin/bash", args: ["-c", baseArgs + " -importPackage " + assetPath])
+            let _ = shell(path: "/bin/bash", args: ["-c", baseArgs + " -importPackage " + assetPath.replacingOccurrences(of: " ", with: "\\ ")])
         }
         
         for customAsset in self.settings.customPackages ?? [] {
