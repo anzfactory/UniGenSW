@@ -18,9 +18,9 @@ Unityでプロジェクトを作ってると...
 1. ここからはターミナルで作業
 
 ```
-    $ cd YourUnityProjectPath
-    $ anz-unigen init
-    $ anz-unigen gen
+$ cd YourUnityProjectPath
+$ anz-unigen init
+$ anz-unigen gen
 ```
 
 `anz-unigen`は直接そこのパスを指定して実行してもいいし、パス通してもいいし...お好きなもので
