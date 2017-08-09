@@ -17,11 +17,11 @@ Unityでプロジェクトを作ってると...
 1. [ここ](https://github.com/anzfactory/UniGenSW/releases/latest)から`anz-unigen`をDL
 1. ここからはターミナルで作業
 
-
+```
     $ cd YourUnityProjectPath
     $ anz-unigen init
     $ anz-unigen gen
-
+```
 
 `anz-unigen`は直接そこのパスを指定して実行してもいいし、パス通してもいいし...お好きなもので
 
